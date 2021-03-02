@@ -10,14 +10,16 @@ const randomColor = () => {
 };
 
 const StatisticsItem = ({ id, label, percentage }) => (
-  <li key={id} style={{ background: randomColor() }}>
+  <li key={id} style={{ backgroundColor: randomColor() }}>
+    {/* <div className={styles.itemBox}> */}
     <span className={styles.label}>{label}</span>
     <span className={styles.percentage}>{percentage}%</span>
+    {/* </div> */}
   </li>
 );
 
 StatisticsItem.propTypes = {
-  //   id: PropTypes.string.isRequired,
+  // id: PropTypes.string.isRequired, //if use it we have a mistake in a web console(use another way to fix it(look Statistics))
   label: PropTypes.string.isRequired,
   percentage: PropTypes.number.isRequired,
 };

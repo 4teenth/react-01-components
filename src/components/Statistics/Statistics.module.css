@@ -1,0 +1,50 @@
+/* Use variables if needs */
+/* @value main-color from '../../vars.module.css'; */
+
+.statistics {
+  margin: 0 auto;
+  width: 250px;
+  /* border: 1px solid main-color; */
+  border: 1px solid lightgray;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0px 0px 5px 1px #768696;
+  text-align: center;
+}
+
+.title {
+  /* OR use 'text-transform: uppercase;' and forget about {title.toUpperCase()} in Statistics */
+  font-size: 16px;
+}
+
+.statList {
+  /* list-style: none; */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statList > li {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+  padding: 10px 0 10px;
+}
+
+/* .itemBox {
+  display: block;
+  padding: 8px 0;
+} */
+
+.label {
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  font-size: 9px;
+}
+
+.percentage {
+  composes: label;
+  font-size: 14px;
+}

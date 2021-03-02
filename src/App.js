@@ -1,6 +1,6 @@
 import React from 'react';
 import Profile from './components/Profile/Profile';
-import Statistics from './components/Statistics/Statistics';
+import Statistics from './components/Statistics/StatisticsList';
 
 import user from './db/user.json';
 import statisticalData from './db/statistical-data.json';
