@@ -9,17 +9,16 @@ const randomColor = () => {
   return '#000000'.slice(0, -color.length) + color;
 };
 
-const StatisticsItem = ({ id, label, percentage }) => (
-  <li key={id} style={{ backgroundColor: randomColor() }}>
-    {/* <div className={styles.itemBox}> */}
+const StatisticsItem = ({ label, percentage }) => (
+  <li style={{ backgroundColor: randomColor() }}>
+    {/* OR move <li> to StatisticsList and use here <></>(Fragment) */}
     <span className={styles.label}>{label}</span>
     <span className={styles.percentage}>{percentage}%</span>
-    {/* </div> */}
   </li>
 );
 
 StatisticsItem.propTypes = {
-  // id: PropTypes.string.isRequired, //if use it we have a mistake in a web console(use another way to fix it(look Statistics))
+  // id: PropTypes.string.isRequired, //* if use|add "id-key" for "li" this propType doesn't work, get a mistake in a console(add "id-key" when we write array, or use array methods, e.g..map)
   label: PropTypes.string.isRequired,
   percentage: PropTypes.number.isRequired,
 };

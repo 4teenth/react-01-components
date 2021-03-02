@@ -24,8 +24,8 @@ Statistics.propTypes = {
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
-      // label: PropTypes.string.isRequired, //don't use it(if you want), cause we wrote this propType in StatisticItems
-      // percentage: PropTypes.number.isRequired, //don't use it(if you want), cause we wrote this propType in StatisticItems
+      // label: PropTypes.string.isRequired, //don't write it, cause we wrote this propType in StatisticItem
+      // percentage: PropTypes.number.isRequired, //don't write it, cause we wrote this propType in StatisticItem
     }),
   ).isRequired,
 };
