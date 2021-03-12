@@ -1,0 +1,27 @@
+.status {
+  display: inline-block;
+  /* display: block; */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.isOnline {
+  composes: status;
+  background: rgb(0, 184, 0);
+}
+
+.isOffline {
+  composes: status;
+  background: red;
+}
+
+.isActive {
+  border-radius: 7%;
+  background: rgb(0, 184, 0);
+}
+
+.isNotActive {
+  border-radius: 7%;
+  background: red;
+}

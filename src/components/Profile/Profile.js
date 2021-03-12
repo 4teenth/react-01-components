@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Profile.module.css';
+// import defAvatar from './727399.svg';
 
 const Profile = ({ user }) => {
   const { name, tag, location, avatar, stats } = user;
@@ -33,8 +34,9 @@ const Profile = ({ user }) => {
 };
 
 Profile.defaultProps = {
-  avatar:
-    'https://www.flaticon.com/svg/vstatic/svg/727/727399.svg?token=exp=1614262651~hmac=52bcd76cf54cdfd8dd09b49f7826a54c',
+  avatar: 'https://img.icons8.com/dusk/2x/anime-emoji--v2.gif',
+  //* OR use a local file
+  // avatar: defAvatar,
 };
 
 Profile.propTypes = {
