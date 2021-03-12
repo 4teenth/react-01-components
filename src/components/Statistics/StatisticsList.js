@@ -30,9 +30,4 @@ Statistics.propTypes = {
   ).isRequired,
 };
 
-// Statistics.propTypes = {
-//   title: PropTypes.string,
-//   stats: PropTypes.array.isRequired,
-// };
-
 export default Statistics;

@@ -12,7 +12,9 @@ const randomColor = () => {
 const StatisticsItem = ({ label, percentage }) => (
   <li style={{ backgroundColor: randomColor() }}>
     {/* OR move <li> to StatisticsList and use here <></>(Fragment) */}
-    <span className={styles.label}>{label}</span>
+    <span style={{ background: randomColor() }} className={styles.label}>
+      {label}
+    </span>
     <span className={styles.percentage}>{percentage}%</span>
   </li>
 );
